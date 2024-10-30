@@ -1,0 +1,20 @@
+# <% require "dotenv"; Dotenv.load(".env") %>
+
+service: demo-bun-serve
+image: gambala/demo-bun-serve
+servers:
+  - <%= ENV["MAIN_SERVER_IP"] %>
+proxy:
+  ssl: false
+  host: bun-serve.gambala.pro
+  app_port: 3000
+  healthcheck:
+    interval: 10
+    path: /
+registry:
+  server: ghcr.io
+  username: gambala
+  password:
+    - KAMAL_REGISTRY_PASSWORD
+builder:
+  arch: arm64
