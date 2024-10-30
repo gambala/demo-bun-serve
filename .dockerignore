@@ -1,0 +1,38 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+
+# TypeScript compiled output
+dist/
+build/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE specific files
+.vscode/
+.idea/
+
+# MacOS specific files
+.DS_Store
+
+# Temporary files
+*.tmp
+*.swp
+
+# Exclude entire docs folder
+docs
+
+# Docker-specific additions
+.git
+.gitignore
+docker-compose*.yml
+Dockerfile*

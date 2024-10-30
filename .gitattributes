@@ -1,0 +1,2 @@
+# Mark bun.lockb as binary file
+*.lockb binary diff=lockb

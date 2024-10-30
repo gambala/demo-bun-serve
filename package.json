@@ -1,0 +1,14 @@
+{
+  "name": "demo-bun-serve",
+  "version": "0.0.1",
+  "description": "A simple Bun application with multiple endpoints",
+  "main": "app.ts",
+  "scripts": {
+    "start": "bun run app.ts"
+  },
+  "author": "Gambala",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "^1.1.12"
+  }
+}
