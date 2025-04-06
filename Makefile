@@ -23,3 +23,13 @@ docker-stop:
 	else \
 		echo "No container ID file found. Is the container running?"; \
 	fi
+
+
+
+fu: frontend-update
+frontend-update:
+	bunx --bun npm-check-updates -i
+
+fuu: frontend-upgrade
+frontend-upgrade:
+	bun update
